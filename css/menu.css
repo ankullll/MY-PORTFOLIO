@@ -1,0 +1,20 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x:hidden ;
+  z-index: 100;
+}
+nav .logo{
+    padding: 0.5em 0.65em;
+    background-color: var(--fg);
+}
+nav.logo a{
+    color: var(--bg);
+    user-select: none;
+}
