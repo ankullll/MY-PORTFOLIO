@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let scrollTriggerInstance = null;
 
   const initAnimation = () => {
-    console.log("HEllo");
     if (window.innerWidth <= 1000) {
       if (scrollTriggerInstance) {
         scrollTriggerInstance.kill();
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const featuredImgCard = document.createElement("div");
       featuredImgCard.className = `featured-img-card featured-img-card-${i}`;
       const img = document.createElement("img");
-      img.src = `/public/images/work-items/work-item-${i}.jpg`;
+      img.src = `/images/work-items/work-item-${i}.jpg`;
       featuredImgCard.appendChild(img);
 
       const position = featuredCardPos[i - 1];
