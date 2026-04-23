@@ -39,11 +39,15 @@
 .hero .hero-footer .hero-footer-symbols {
   height: 1rem;
 }
+.hero-img-holder{
+  width: 100vw;
+  height: 100vh;
+}
 .hero-img-holder .hero-img {
   position: relative;
   width: 100%;
-  height: 100%;
-  transform: translateY(-95%) scale(0.23) rotate(-15deg);
+  height: 125%;
+  transform: translateY(-95%) scale(0.25) rotate(-15deg);
   border: 0.3em solid var(--fg);
   border-radius: 2em;
   overflow: hidden;
