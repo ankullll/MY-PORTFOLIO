@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
           x: xPosition,
         });
         featuredImgCards.forEach((featuredImgCard, index) => {
-          const staggerOffset = index * 0.075;
+          const staggerOffset = index * 0.085;
           const scaledProgress = (self.progress - staggerOffset) * 2;
           const individualsProgress = Math.max(0, Math.min(1, scaledProgress));
           const newZ = -1500 + (1500 + 1500) * individualsProgress;
@@ -119,22 +119,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const indicators = document.querySelectorAll(".indicator");
         const totalIndicators = indicators.length;
         const progressPerIndicator = 1 / totalIndicators;
-        indicators.forEach((indicator,index)=>{
-            const indicatorStart = index* progressPerIndicator;
-            const indicatorOpacity = self.progress > indicatorStart? 1:0.2;
-            gsap.to(indicator,{
-                opacity:indicatorOpacity,
-                duration:0.3,
-            })
-            
-
-        })
+        indicators.forEach((indicator, index) => {
+          const indicatorStart = index * progressPerIndicator;
+          const indicatorOpacity = self.progress > indicatorStart ? 1 : 0.2;
+          gsap.to(indicator, {
+            opacity: indicatorOpacity,
+            duration: 0.3,
+          });
+        });
       },
     });
   };
   initAnimation();
 
-  window.addEventListener('resize',()=>{
+  window.addEventListener("resize", () => {
     initAnimation();
-  })
+  });
 });

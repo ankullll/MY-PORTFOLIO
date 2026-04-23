@@ -41,7 +41,7 @@
 }
 .hero-img-holder{
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
 }
 .hero-img-holder .hero-img {
   position: relative;
@@ -51,6 +51,7 @@
   border: 0.3em solid var(--fg);
   border-radius: 2em;
   overflow: hidden;
+  /* padding: 1em; */
 }
 .featured-work {
   position: relative;
